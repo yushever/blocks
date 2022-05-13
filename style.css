@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "TTLakes-Regular";
+    src: url("fonts/TTLakes-Regular.ttf");
+    font-family: "TTLakes-Bold";
+    src: url("fonts/TTLakes-Bold.ttf");
+}
+body {
+    font-family: "TTLakes-Regular";
+}
+.headmenu, .content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 320px) {
+.headmenu {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 88px;
+    flex-wrap: nowrap;
+    width: 100%;
+
+}
+.menu {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.menu__logo::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    left: 186px;
+    top: 28px;
+    bottom: 88.1%;
+    background: #EAEAEA;
+    border-radius: 1px;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    font-family: "TTLakes-Regular";
+    letter-spacing: -0.2px;
+    justify-content: flex-start;
+    
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #F8F8F8;
+}
+.content__title {
+    font-family: "TTLakes-Bold";
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin-left: 16px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+
+.button {
+    border: none;
+    background-color: transparent;
+}
+
+.options {
+    display: flex;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+.options__button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7E7E82;
+    padding: 8px 9.3px 8px 16.54px;
+    margin-right: 16px;
+
+}
+.options__button:first-child {
+    background-color: white;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+.content__more {
+    border: 2px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    width: 132px;
+    height: 24px;
+    line-height: 24px;
+    color: #1B1C21;
+    margin: 16px;
+    padding-right: 0;
+    padding-left: 16px;
+    background-image: url("img/icons/icon.svg");
+    background-size: 7.41px;
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+}
+
+.content__text {
+    font-family:  "TTLakes-Regular";
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+    margin-left: 16px;
+}
+}

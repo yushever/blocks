@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    height: 88px;
+}
+.left {
+    display: flex; 
+    /* background-color: blue; */
+}
+.right {
+    display: flex;
+    /* background-color: pink; */
+}
+.menu {
+    display: flex;
+}
+.logo {
+    display: flex;
+}
+.contacts {
+    display: flex;
+}
+.repair {
+    display: flex;
+}
+
+.contacts {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .contacts {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+
+}
+.icon-button {
+    background-color: transparent;
+    border: none;
+}
