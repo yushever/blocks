@@ -3,61 +3,121 @@
     <head>
         <link href="style.css" rel="stylesheet">
         <meta charset="utf-8">
-        <title>CPS</title>
-        <style>
-            
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-            <div class="headmenu">
-                <div class="menu">
-                    <button class="menu__button button">
-                    <img src="img/icons/burger.svg" width="40px" height="40px">
-                    </button>
-                    <div class="menu__logo">
-                    <img src="img/logo.svg" width="96.55px" height="50.81px" alt="Логотип">
+            <div class="header">
+                <div class="left">
+                    <div class="menu">
+                        <div class="menu__burger">
+                            <button class="icon-button">
+                                <img src="img/icons/burger.svg" width="40px" height="40px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <div class="logo_image">
+                            <img src="img/logo.svg" width="96.55px" height="50.81px" alt="Логотип">
+                        </div>
                     </div>
                 </div>
-                <div class="actions">
-                    <button class="actions__repair button">
-                        <img src="img/icons/repair.svg" width="40px" height="40px">
-                    </button>
-                    <button class="actions__status button">
-                        <img src="img/icons/checkstatus.svg" width="40px" height="40px">
-                    </button>
+                <div class="right">
+                    <div class="contacts">
+                        <div class="contacts__call">
+                            <button class="icon-button">
+                                <img src="img/icons/call.svg" width="40px" height="40px">
+                            </button>
+                        </div>
+                        <div class="contacts__chat">
+                            <button class="icon-button">
+                                <img src="img/icons/chat.svg" width="40px" height="40px">
+                            </button>
+                        </div>
+                        <div class="contacts__profile">
+                            <button class="icon-button">
+                                <img src="img/icons/profile.svg" width="40px" height="40px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="repair">
+                        <div class="repair__apply">
+                            <button class="icon-button">
+                                <img src="img/icons/repair.svg" width="40px" height="40px">
+                            </button>  
+                        </div>
+                        <div class="repair__check">
+                            <button class="icon-button">
+                                <img src="img/icons/checkstatus.svg" width="40px" height="40px">
+                            </button>  
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </header>
         <main>
             <div class="content">
-                <div class="content__title">
-                    Услуги и сервисы
+                <div class="title">
+                    <div class="heading">
+                        Услуги и сервисы
+                    </div>
+                    <div class="hidden">
+                        <div class="hidden__apply">
+                            <button class="icon-button">
+                                Оставить заявку
+                                <img class="hidden-button" src="img/icons/repair.svg" width="40px" height="40px">
+                            </button>  
+                        </div>
+                        <div class="hidden__check">
+                            <button class="icon-button">
+                                Статус ремонта
+                                <img class="hidden-button" src="img/icons/checkstatus.svg" width="40px" height="40px">
+                            </button>  
+                        </div>
+                    </div>
                 </div>
-                <div class="options">
-                    <input class="options__button" type="button" value="Ремонтируемые бренды">
-                    <input class="options__button" type="button" value="Ремонтируемые устройства">
-                    <input class="options__button" type="button" value="Цены на услуги">
-                    <input class="options__button" type="button" value="Адреса сервисных центров">
-                    <input class="options__button" type="button" value="Специальные цены">
-                    <input class="options__button" type="button" value="Отзывы">
+                <div class="scroll">
+                    <button class="scroll__option">Ремонтируемые устройства</button>
+                    <button class="scroll__option">Дополнительные услуги</button>
+                    <button class="scroll__option">Цены на услуги</button>
+                    <button class="scroll__option">Специальные цены</button>
+                    <button class="scroll__option">Адреса сервисных центров</button>
+                    <button class="scroll__option">Отзывы</button>
                 </div>
-                <div class="content__text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </div>
-                
-                    <button class="content__more">
-                        <!-- <img src="img/icons/icon.svg" width="7.41px" height="10.29px"> -->
-                        Читать далее
-                </button>
-          
-                <div class="image">
-                    <img src="img/img.jpg" width="320" height="176" alt="Картинка">
+                <div class="body">
+                    <div class="info">
+                        <div class="info__text">
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </div>
+                        <button class="info__more">
+                            Читать далее
+                        </button>
+                    </div>
+                    <!-- <div class="image"> -->
+                        <img class="image" src="img/img.jpg" alt="Картинка">
+                    <!-- </div> -->
                 </div>
             </div>
-
         </main>
-
     </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
