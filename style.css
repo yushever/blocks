@@ -41,8 +41,8 @@ body {
 }
 .repair {
     display: flex;
-    margin-right: 40px;
-    /* margin-left: 16px; */
+    justify-content: space-evenly;
+    margin-right: 16px;
 }
 .repair::before {
     content: "";
@@ -50,20 +50,10 @@ body {
     height: 32px;
     background: #EAEAEA;
     border-radius: 1px;
-    margin: 4px 20px 4px 20px;
+    margin: 4px 16px;
 }
 .contacts {
     display: none;
-}
-.contacts__call {
-    margin-right: 16px;
-}
-.contacts__chat {
-    margin-right: 16px;
-}
-
-.repair__apply {
-    margin-right: 16px;
 }
 .scroll {
     display: flex;
@@ -82,7 +72,6 @@ body {
     color: #7E7E82;
     padding: 8px 16px 8px 16px;
     margin-bottom: 16px;
-
 }
 .scroll__option:hover {
     background-color: white;
@@ -106,7 +95,6 @@ body {
     vertical-align: middle;
     width: 4px;
     height: 40px;
-    /* margin-left: 0; */
     margin-right: 16px;
     background: #41F6D7;
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -147,13 +135,10 @@ body {
     background-repeat: no-repeat;
     background-position: 0px 7px;
 }
-
 .image {
     width: 100%;
     max-width: 531px;
     height: auto;
-    /* object-fit: cover; */
-    /* height: auto; */
 }
 .title {
     display: flex;
@@ -175,10 +160,13 @@ body {
     padding-left: 8px;
 }
 .hidden__apply {
-    margin-right: 16px;
+    margin-right: 0px;
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
     .contacts {
         display: flex;
     }
@@ -215,7 +203,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1120px) { 
     .header {
         display: none;
     }
@@ -229,14 +217,11 @@ body {
         margin-right: 32px;
     }
     .info__text {
-        /* height: 160px; */
         min-width: 490px;
     }
     .image {
         border-radius: 6px;
         margin-left: 30px;
-        /* object-fit:contain; */
-        /* max-width: 120%; */
         margin-right: 25px;
     }
     .scroll__option {
@@ -247,6 +232,5 @@ body {
     }
     .heading {
         padding-top: 42px;
-    }
-    
+    }   
 }
