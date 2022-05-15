@@ -20,12 +20,12 @@ body {
     height: 88px;
     background-color: white;
 }
-.left {
+.main-menu {
     display: flex; 
     align-items: center;
     margin-left: 16px;
 }
-.right {
+.extra-menu {
     display: flex;
 }
 .icon-button {
