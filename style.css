@@ -56,9 +56,17 @@ body {
     display: none;
 }
 .scroll {
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* overflow-x: scroll;
+    margin-left: 16px; */
+}
+.scroll__list{
     display: flex;
-    flex-wrap: nowrap;
     overflow-x: scroll;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding-left: 0;
     margin-left: 16px;
 }
 .scroll__option {
@@ -207,7 +215,7 @@ body {
     .header {
         display: none;
     }
-    .scroll {
+    .scroll__list {
         flex-wrap: wrap;
         overflow: hidden;
         justify-content: space-between;

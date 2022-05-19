@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "TTLakes";
+    font-weight: 400;
+    src: url("fonts/TTLakes-Regular.ttf");
+}
+@font-face {
+    font-family: "TTLakes";
+    font-weight: 700;
+    src: url("fonts/TTLakes-Bold.ttf");
+}
+@font-face {
+    font-family: "TTLakes";
+    font-weight: 500;
+    src: url("fonts/TTLakes-Medium.ttf");
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+.wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "TTLakes";
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 800px;
+    /* justify-content: space-around; */
+    background-color: white;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer-content {
+    flex: 0 0 auto;
+}
+.icon-button {
+    background-color: transparent;
+    border: none;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.open-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-top: 19px;
+    width: 154px;
+}
+.search-menu {
+    margin-right: 24px;
+    margin-top: 20px;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+.menu__option {
+    margin-left: 30px;
+    padding-bottom: 32px;
+    /* padding-left: 24px; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+.lang-button {
+    background-color: transparent;
+    border: none;
+    font-family: TTLakes;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.menu__ref {
+    position: relative;
+    text-decoration: none;
+    color: #1B1C21;
+    transition: opacity 0.1s linear;
+    /* margin-left: 24px; */
+}
+.menu__ref:hover {
+    opacity: 0.6;
+}
+.menu__ref:hover::before {
+    content: "";
+    position: absolute;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    width: 4px;
+    height: 32px;
+    left: -30px;
+    top:-5px;
+
+    /* margin-right: 28px; */
+    background: #41F6D7;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.languages {
+    display: flex;
+
+    padding-bottom: 32px;
+}
+.lang-button_active {
+    color: #7E7E82;
+}
+.email {
+    margin-left: 5px;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+    margin-left: 24px;
+}
+.email__phone {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    padding-top: 12px;
+}
+.email__mail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
