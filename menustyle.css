@@ -36,8 +36,20 @@ body {
     flex: 0 0 auto;
 }
 .icon-button {
-    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 20px;
+    position: relative;
+    /* text-align: center;     */
+    /* vertical-align: middle; */
     border: none;
+    cursor: pointer;
+}
+.icon-image {
+    position: absolute;
+    top: 25%;
+    left: 25%;
 }
 .header {
     display: flex;
@@ -80,6 +92,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
+    cursor: pointer;
 }
 .contacts {
     display: flex;
@@ -105,15 +118,15 @@ body {
     height: 32px;
     left: -30px;
     top:-5px;
-
     /* margin-right: 28px; */
     background: #41F6D7;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .languages {
     display: flex;
-
     padding-bottom: 32px;
+    list-style-type: none;
+    padding-left: 0px;
 }
 .lang-button_active {
     color: #7E7E82;
