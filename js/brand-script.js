@@ -9,11 +9,11 @@ function swiperMode() {
         if (!init) {
             init = true;
             swiper = new Swiper('.swiper', {
-                slidesPerView: 3,
-                centeredSlides: false,
-                initialSlide: 0,
+                slidesPerView: "auto",
                 loop: true,
-                spaceBetween: 10,
+                initialSlide: 0,
+                
+                spaceBetween: 0,
                 pagination: {
                     clickable: true,
                     el: '.swiper-pagination',

@@ -9,12 +9,13 @@ body {
 .wrapper {
     background-color: #F2F2F2;
     height: 100%;
+    max-width: 1120px;
 }
 .swiper {
     margin-left: 24px  !important;
 }
 .swiper-slide {
-    width: 224px !important;
+    width: 240px !important;
     height: 72px !important;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -59,6 +60,7 @@ body {
     flex-wrap: nowrap;
     list-style: none;
     padding-left: 0;
+    padding-right: 0;
 }
 .brands-content::after {
     content: "";
@@ -71,7 +73,7 @@ body {
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 .brands-content__option {
-    width: 224px;
+    width: 240px;
     height: 72px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -175,5 +177,8 @@ body {
 }
 .swiper-pagination {
     display: none;
+}
+.brands-content__option {
+    margin-right: 32px;
 }
 }
